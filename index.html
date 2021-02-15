@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1" /> -->
+    <!-- <script src="//cdn.jsdelivr.net/npm/less@3.13"></script> -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <a class="container-item logo" href="/">
+        <img
+          height="60px"
+          src="https://app.myfinally.com/assets/img/logo.svg"
+          alt=""
+        />
+      </a>
+      <div
+        id="myCarousel"
+        class="carousel slide container-item galery"
+        data-ride="carousel"
+      >
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="itmcontent">
+              <img
+                src="https://github.com/danmincu/angular-nebular-test/blob/master/assets/img1.png?raw=true"
+                alt="Los Angeles"
+                style="height:300px;"
+              />
+              <h1>Optimize your Budget</h1>
+              <p>Track your expenses and learn how</p>
+              <p>to spend your money wiser</p>
+            </div>
+          </div>
+
+          <div class="item">
+            <div class="itmcontent">
+              <img
+                src="https://github.com/danmincu/angular-nebular-test/blob/master/assets/img2.png?raw=true"
+                alt="Chicago"
+                style="height:300px;"
+              />
+              <h1>Automatically Save for your Goals</h1>
+              <p>Manually saving and budgeting can be a hastle! Let</p>
+              <p>us do it for you automatically, you won't even notice</p>
+              <p>you're saving until you can finally reach your goals!</p>
+            </div>
+          </div>
+
+          <div class=" item">
+            <div class="itmcontent">
+              <img
+                src="https://github.com/danmincu/angular-nebular-test/blob/master/assets/img3.png?raw=true"
+                alt="New york"
+                style="height:300px;"
+              />
+              <h1>Never Feel Alone</h1>
+              <p>Can't seem to keep your expenses below your</p>
+              <p>income? Confused why you're &quot;saving&quot; but can</p>
+              <p>never quite seem to afford your goals? You're never</p>
+              <p>alone at Finally, here we offer you financial advice</p>
+              <p>and budget optimization at every step of the way!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <!-- <a class=" left carousel-control" href="#myCarousel" data-slide="prev">
+										<span class="glyphicon glyphicon-chevron-left"></span>
+										<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a> -->
+      </div>
+      <div class="container-item bottom">
+        <div id="skipBtn" class="button">
+          <a href="/signin.html">Skip</a>
+        </div>
+        <div class="button">
+          <a 
+          class="carousel-button" 
+          href="#myCarousel" data-slide="next"
+            >Next</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

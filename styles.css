@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css?family=Signika:300,400,600,700&display=swap");
+
+:root {
+  --alto: rgba(222, 222, 222, 1);
+  --bay-of-many: rgba(20, 56, 139, 1);
+  --elf-green: rgba(7, 151, 112, 1);
+  --forest-green: rgba(7, 159, 33, 1);
+  --fuscous-gray: rgba(83, 83, 83, 1);
+  --onyx: rgba(57, 57, 57, 0.871);
+  --onyx-2: rgba(57, 57, 57, 1);
+  --quick-silver: rgba(164, 165, 169, 1);
+  --quick-silver-2: rgba(164, 166, 169, 1);
+  --white: rgba(255, 255, 255, 1);
+  --my-finally-background: #15388a;
+}
+
+html body {
+  height: 100%;
+  background: var(--my-finally-background);
+}
+
+.sidebysidecontainer {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sidebysidecontainer > .left {
+  flex: 3;
+}
+
+@media (max-width: 1000px) {
+  .sidebysidecontainer > .left {
+    visibility: hidden;
+    width: 0px;
+    flex: unset;
+  }
+}
+
+.sidebysidecontainer > .right {
+  flex: 2;
+  background: var(--white);
+  min-width: 400px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 60px 40px;
+}
+
+.sign-in {
+  margin-top: 20%;
+  flex-basis: 30%;
+  color: var(--onyx-2);
+  justify-content: left;
+  background-color: transparent;
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sign-in p {
+  letter-spacing: 0.4px;
+  font-size: 14.9px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.login-container {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.login-container input {
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgba(191, 191, 191, 1);
+  min-width: 470px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+.login-container ::placeholder {
+  font-size: 15px;
+  color: rgba(185, 185, 185, 1);
+  letter-spacing: 0.47px;
+}
+
+.input-inside .password-input {
+  width: 500px;
+}
+
+.input-inside > div .password-input-icon-group {
+  display: block;
+  height: 0px;
+  text-align: left;
+  padding-left: 70px; 
+  font: 22px sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.input-inside > div .password-input-icon-group > i {
+  position: absolute;
+  right: 41px;
+  bottom: 26px;
+  cursor: pointer;
+}
+
+.fa {
+  color: rgba(191, 191, 191, 1);
+}
+
+.login-container .forgot-link {  
+  background-color: transparent;
+  color: var(--onyx-2);
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-size: 12.9px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.signinForm {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.statement {
+  min-width: 270;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.statement span {
+  font-weight: 500;
+  color: var(--quick-silver-2);
+}
+
+.sign-in-btn {
+  width: 130px;
+  height: 49px;
+  margin: 0 20px;
+  background: var(--my-finally-background);
+  color: var(--white);
+  border: 2px solid var(--my-finally-background);
+  font-size: 16px;
+  font-weight: 200;
+  border-radius: 22px;
+  text-transform: uppercase;
+}
+
+.sign-in-btn:focus {
+  outline: 0;
+}
+
+.sign-in-btn:active {
+  font-size:17px;
+}
+
+.new-account {
+  font-size: large;
+}
+
+.new-account .text {
+  color: rgba(57, 57, 57, 1);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.62px;
+  line-height: 16px;
+}
+.new-account > .link > a {
+  color: rgba(20, 56, 139, 1);
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  width: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container-item {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 36px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  background-color: transparent;
+  height: 160px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
+
+.galery {
+  background-color: transparent;
+  flex: 1;
+}
+
+.bottom {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.button a {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+#skipBtn a {
+  color: #9cabcd;
+}
+
+.item {
+  margin-top: 10px;
+  min-height: 550px;
+  min-width: 550px;
+}
+
+.itmcontent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Signika", sans-serif;
+}
+
+.itmcontent p {
+  color: #9cabcd;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 1px 0;
+}
+
+.itmcontent h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: gray;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+.carousel-indicators :active {
+  width: 12px;
+  height: 12px;
+  margin: 0;
+  background-color: white;
+}
