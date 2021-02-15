@@ -92,6 +92,46 @@ html body {
   letter-spacing: 0.47px;
 }
 
+.signup-container {
+  flex: 1;
+  justify-content: space-between;
+}
+
+.signup-container input {
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgba(191, 191, 191, 1);
+  min-width: 470px;
+  background-color: transparent;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.signup-container ::placeholder {
+  font-size: 15px;
+  color: transparent;
+  letter-spacing: 0.47px;
+}
+
+.input-inside {
+  display: flex;
+  flex-flow: column;
+  max-width: 300px;
+}
+
+.input-inside label {
+  color: var(--quick-silver);
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  letter-spacing: 0.47px;
+  line-height: 16px;
+}
+
 .input-inside .password-input {
   width: 500px;
 }
@@ -100,12 +140,13 @@ html body {
   display: block;
   height: 0px;
   text-align: left;
-  padding-left: 70px; 
+  padding-left: 70px;
   font: 22px sans-serif;
   position: relative;
   top: 0;
   left: 0;
 }
+
 .input-inside > div .password-input-icon-group > i {
   position: absolute;
   right: 41px;
@@ -113,11 +154,43 @@ html body {
   cursor: pointer;
 }
 
+.signup-container .input-inside > div .password-input-icon-group > i {
+  position: absolute;
+  right: 41px;
+  bottom: 32px;
+  cursor: pointer;
+}
+
+.input-inside input:required + label > b {
+  color: rgba(255, 106, 62, 1);
+}
+
+.checkbox-with-label {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+.checkbox-with-label > input {
+  margin: 10px 0px;
+  padding: 10 px;
+  min-width: unset;
+}
+
+.checkbox-with-label > label {
+  margin: 10px 10px;
+  color: var(--onyx-2);
+  font-family: "Signika", Helvetica, Arial, serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .fa {
   color: rgba(191, 191, 191, 1);
 }
 
-.login-container .forgot-link {  
+.login-container .forgot-link {
   background-color: transparent;
   color: var(--onyx-2);
   font-family: "Signika", Helvetica, Arial, serif;
@@ -165,7 +238,7 @@ html body {
 }
 
 .sign-in-btn:active {
-  font-size:17px;
+  font-size: 17px;
 }
 
 .new-account {
